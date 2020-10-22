@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   width: 100%;
@@ -38,38 +39,29 @@ body {
 .header {
   color: #fff;
 }
-.header .card {
+.header nav {
   position: absolute;
   z-index: 9;
   border: none;
-  padding: 0;
+  padding-top: 20px;
   margin: 0;
   width: 100%;
   background-color: transparent;
 }
-.header .card .card-body {
-  border-radius: 0 !important;
-}
-.header .card .container h3 {
+.header nav .container a {
+  text-decoration: none;
   font-family: "Roboto Slab", serif;
-  letter-spacing: 2px;
-  display: inline-block;
   color: #58dccc;
-  font-size: 30px;
-  text-align: center;
+  font-size: 40px;
 }
-.header .card .container h3 img {
-  padding: 10px;
+.header nav .container a img {
+  height: 70px;
+  width: 70px;
   border-radius: 50%;
 }
-.header .card .container button {
-  padding-top: 10px;
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: 2px;
+.header nav .container button {
   text-transform: uppercase;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  letter-spacing: 2px;
 }
 .header .slider {
   position: relative;
@@ -197,5 +189,14 @@ body {
 .download-area .container .row p {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
+  text-transform: capitalize;
+}
+.footer .container {
+  border-top: 1px solid gainsboro;
+}
+.footer .container p {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  font-size: 10px;
   text-transform: capitalize;
 }

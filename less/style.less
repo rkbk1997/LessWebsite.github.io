@@ -4,6 +4,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   width: 100%;
@@ -42,40 +43,32 @@ body {
 }
 .header {
   color: #fff;
-  .card {
+  nav {
     position: absolute;
     z-index: 9;
     border: none;
-    padding: 0;
+    padding-top: 20px;
     margin: 0;
     width: 100%;
     background-color: transparent;
-    .card-body {
-      border-radius: 0 !important;
-    }
-    .container {
-      h3 {
+    .container{
+      a{
+        text-decoration: none;
         font-family: @headerFont;
-        letter-spacing: 2px;
-        display: inline-block;
         color: @fontcolor;
-        font-size: 30px;
-        text-align:center;
+        font-size: 40px;
         img{
-          padding:10px;
+          height: 70px;
+          width: 70px;
           border-radius: 50%;
         }
       }
-      button {
-        padding-top: 10px;
-        font-family: @textFont;
-        letter-spacing: 2px;
+      button{
         text-transform: uppercase;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        letter-spacing: 2px;
       }
     }
+   
   }
   .slider {
     position: relative;
@@ -226,6 +219,17 @@ body {
         font-size: 20px;
         text-transform: capitalize;
       }
+    }
+  }
+}
+.footer{
+  .container{
+    border-top: 1px solid gainsboro;
+    p{
+      padding-top: 10px;
+      padding-bottom: 30px;
+      font-size: 10px;
+      text-transform: capitalize;
     }
   }
 }
