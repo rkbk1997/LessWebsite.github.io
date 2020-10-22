@@ -52,11 +52,11 @@ body {
   text-decoration: none;
   font-family: "Roboto Slab", serif;
   color: #58dccc;
-  font-size: 40px;
+  font-size: 25px;
 }
 .header nav .container a img {
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
 }
 .header nav .container button {
