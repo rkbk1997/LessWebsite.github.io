@@ -1,0 +1,225 @@
+@textFont: "Montserrat", sans-serif;
+@headerFont: "Roboto Slab", serif;
+@fontcolor: #58dccc;
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100vh;
+}
+.modal{
+  text-align: center;
+  button{
+    float: right !important;
+  }
+  .modal-body{
+    img{
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+    h3{
+      font-family: @headerFont;
+    }
+    i{
+      color: @fontcolor;
+    }
+    input[type=text]{
+      height: 50px;
+      background-color: ghostwhite;
+    }
+    button{
+      background-color: @fontcolor;
+      font-family: @textFont;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      height: 50px;
+    }
+  }
+}
+.header {
+  color: #fff;
+  .card {
+    position: absolute;
+    z-index: 9;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: transparent;
+    .card-body {
+      border-radius: 0 !important;
+    }
+    .container {
+      h3 {
+        font-family: @headerFont;
+        letter-spacing: 2px;
+        display: inline-block;
+        color: @fontcolor;
+        font-size: 40px;
+        img{
+          padding:10px;
+          border-radius: 50%;
+        }
+      }
+      button {
+        float: right;
+        font-family: @textFont;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .slider {
+    position: relative;
+    top: 0;
+    .carousel-inner {
+      img {
+        height: 400px;
+      }
+      .container {
+        p {
+          float: left;
+          color: #fff;
+          font-family: @textFont;
+          font-size: 20px;
+          letter-spacing: 1px;
+          font-weight: bolder;
+          text-transform: capitalize;
+          span {
+            color: @fontcolor;
+            float: left;
+          }
+          button {
+            float: left !important;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            font-family: @textFont;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+}
+.content-area{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .card-deck{
+        .card{
+            border: none !important;
+            img{
+                height: 180px;
+            }
+            .card-body{
+                p{
+                    text-align: center;
+                    font-family: @textFont;
+                }
+            }
+        }
+    }
+}
+.course{
+  background-color: #F2F2F2;
+  padding-bottom: 50px;
+  h1{
+    font-family: @headerFont;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .container{
+    .row{
+      .card{
+        border: none;
+        border-radius: 20px !important;
+        margin-bottom: 20px;
+        transition-delay: .5ms;
+        img{
+          height: 150px;
+          border-radius: 20px 20px 0 0;
+        }
+        .card-body{
+          .card-title{
+            font-family: @headerFont;
+            text-align: center;
+          }
+          .card-text{
+            font-family: @textFont;
+            padding-top: 20px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+.course .container .card:hover{
+    -webkit-box-shadow: -1px 1px 5px 6px rgba(217,210,217,1);
+    -moz-box-shadow: -1px 1px 5px 6px rgba(217,210,217,1);
+    box-shadow: -1px 1px 5px 6px rgba(217,210,217,1);
+}
+.info{
+  background-image: url("../images/j-kelly-brito-qeJMESSPO4Q-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  padding-bottom: 50px;
+  .info-2{
+    background-color: black;
+    height: 400px;
+    opacity: .5;
+    .container{
+      h1{
+        font-family: @headerFont;
+        color: #fff;
+        padding-top: 70px+10px;
+        text-align: center;
+        text-transform: capitalize;
+        line-height: 60px;
+        letter-spacing: 1px;
+      }
+      button{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        width: 25%;
+        font-family: @textFont;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+.download-area{
+  padding-bottom: 50px;
+  .container{
+    .row{
+      img{
+        // padding-top: 30px;
+      }
+      .col-md-6{
+        margin: 0;
+        padding: 0;
+      }
+      h2{
+        font-family: @headerFont;
+        padding-top: 100px;
+        text-transform: uppercase;
+        font-size: 40px;
+        line-height: 70px;
+      }
+      p{
+        font-family: @textFont;
+        font-size: 20px;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
