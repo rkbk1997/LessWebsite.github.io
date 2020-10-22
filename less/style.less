@@ -152,21 +152,23 @@ body {
           .card-title{
             font-family: @headerFont;
             text-align: center;
+            text-transform: capitalize;
           }
           .card-text{
             font-family: @textFont;
             padding-top: 20px;
             text-align: center;
+            text-transform: capitalize;
           }
+        }
+        &:hover{
+          -webkit-box-shadow: -1px 1px 5px 6px rgba(217,210,217,1);
+          -moz-box-shadow: -1px 1px 5px 6px rgba(217,210,217,1);
+          box-shadow: -1px 1px 5px 6px rgba(217,210,217,1);
         }
       }
     }
   }
-}
-.course .container .card:hover{
-    -webkit-box-shadow: -1px 1px 5px 6px rgba(217,210,217,1);
-    -moz-box-shadow: -1px 1px 5px 6px rgba(217,210,217,1);
-    box-shadow: -1px 1px 5px 6px rgba(217,210,217,1);
 }
 .info{
   background-image: url("../images/j-kelly-brito-qeJMESSPO4Q-unsplash.jpg");
